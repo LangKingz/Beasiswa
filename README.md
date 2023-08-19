@@ -52,9 +52,6 @@ Untuk menjalankan formulir pendaftaran beasiswa di lingkungan lokal Anda, ikuti 
 
 Kontribusi terhadap proyek formulir pendaftaran beasiswa ini sangat diterima! Jika Anda menemukan masalah atau perbaikan, silakan buat permintaan pull atau ajukan isu di repositori.
 
-## Lisensi
-
-Proyek ini menggunakan [NAMA LISENSI](LICENSE) - Sebutkan lisensi sesungguhnya di bawah mana proyek ini didistribusikan.
 
 ---
 
