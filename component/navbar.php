@@ -9,15 +9,20 @@
 
 <body>
     <header>
-        <h1>Sistem Pendaftaran Beasiswa</h1>
+        <div class="container">
+            <nav>
+                <div class="Title">
+                    <h3>Pilihan Beasiswa</h3>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a class="active" href="">Daftar</a></li>
+                        <li><a  href="/beasiswa/View/view.php" >Hasil</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#beasiswa">Jenis Beasiswa</a></li>
-            <li><a href="#daftar">Daftar Beasiswa</a></li>
-            <li><a href="#hasil">Hasil Beasiswa</a></li>
-        </ul>
-    </nav>
 </body>
 
 </html>

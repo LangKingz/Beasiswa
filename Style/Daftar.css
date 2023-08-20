@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #094067 !important;
+}
+
+nav {
+  background-color: #fffffe;
+  height: 70px;
+  width: 100%;
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .Title h3 {
+  color: #094067;
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 1rem 0;
+}
+ul li a {
+  text-decoration: none;
+  margin: 1rem 0;
+  color: #094067;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1.5rem 6rem;
+}
+
+.active {
+  background-color: #3da9fc;
+  color: white;
+}
+
+main {
+  height: 800px;
+  background-color: #fffffe;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 4.5rem;
+}
+
+main .title {
+  margin-bottom: 3rem;
+}
+main .title h3 {
+  color: #094067;
+  margin: 1rem 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+main table {
+  display: flex;
+}
+
+main form {
+  margin: 0 10rem;
+}
+main table input,select{
+  margin-top: 1rem;
+}
+
+main table .titik {
+  padding-left: 12rem;
+  padding-right: 1.5rem;
+
+}
+
+main table input[type="text"],input[type="email"],input[type="tel"],select {
+  border: 1px solid #094067;
+  width: 387px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 0 0.5rem;
+}
+
+main table button {
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin-top: 4rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.daftar{
+  background-color: #3da9fc;
+}
+
+.btn-batal{
+  background-color: #EF4565;
+}
+
+input:disabled{
+  background-color: #E5E5E5;
+}
