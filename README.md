@@ -55,4 +55,3 @@ Kontribusi terhadap proyek formulir pendaftaran beasiswa ini sangat diterima! Ji
 
 ---
 
-Silakan ganti `<repository-url>` dan `[NAMA LISENSI]` dengan nilai yang sesuai. Pastikan untuk menambahkan informasi lebih lanjut jika ada komponen atau ketergantungan lain yang terlibat dalam proyek.
