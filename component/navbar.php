@@ -17,7 +17,7 @@
                 <div class="menu">
                     <ul>
                         <li><a class="active" href="">Daftar</a></li>
-                        <li><a  href="/beasiswa/View/view.php" >Hasil</a></li>
+                        <li><a href="">Hasil</a></li>
                     </ul>
                 </div>
             </nav>
