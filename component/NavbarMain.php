@@ -15,7 +15,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="daftar/index.php">Daftar</a></li>
+                    <li><a href="../daftar/index.php">Daftar</a></li>
                     <li><a href="" class="active">Hasil</a></li>
                 </ul>
             </div>

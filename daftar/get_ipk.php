@@ -5,10 +5,10 @@ require '../koneksi/koneksi.php';
 // Memeriksa apakah parameter 'nama' telah diterima melalui metode GET
 if (isset($_GET['id_anggota'])) {
     // Mengamankan nilai 'nama' dari potensi serangan SQL injection
-    $nama = mysqli_real_escape_string($koneksi, $_GET['id_anggota']);
+    $id_anggota = mysqli_real_escape_string($koneksi, $_GET['id_anggota']);
 
     // Membuat kueri SQL untuk mengambil data IPK dari tabel anggota berdasarkan nama
-    $sql = "SELECT ipk FROM anggota WHERE id_anggota = '$nama'";
+    $sql = "SELECT ipk FROM anggota WHERE id_anggota = '$id_anggota'";
 
     // Menjalankan kueri SQL dan mengambil hasilnya
     $result = $koneksi->query($sql);

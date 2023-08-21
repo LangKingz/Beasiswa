@@ -16,7 +16,7 @@
         </div>
         <div class="menu">
           <ul>
-            <li><a class="" href="../index.php">Daftar</a></li>
+            <li><a class="" href="beasiswa/daftar">Daftar</a></li>
             <li><a href="" class="active">Hasil</a></li>
           </ul>
         </div>

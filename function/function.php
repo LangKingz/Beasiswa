@@ -2,23 +2,28 @@
 
 function uploud()
 {
+    // Mendapatkan informasi terkait file yang diupload
+    $namaFile = $_FILES['foto']['name']; // Nama asli file yang diupload
+    $ukuranFile = $_FILES['foto']['size']; // Ukuran file dalam byte
+    $error = $_FILES['foto']['error']; // Kode error (jika ada)
+    $tempName = $_FILES['foto']['tmp_name']; // Nama sementara file pada server
 
-    $namaFile = $_FILES['foto']['name'];
-    $ukuranFile = $_FILES['foto']['size'];
-    $error = $_FILES['foto']['error'];
-    $tempName = $_FILES['foto']['tmp_name'];
-
+    // Memeriksa apakah ada error saat upload
     if ($error === 4) {
         echo "<script>
         alert('Pilih gambar terlebih dahulu');
     </script>";
-        return false;
+        return false; // Menghentikan eksekusi fungsi
     }
 
+    // Definisi ekstensi gambar yang diizinkan
     $ekstensiGambarValid = ['jpg', 'jpeg', 'png'];
+
+    // Mendapatkan ekstensi dari nama file yang diupload
     $ekstensiGambar = explode('.', $namaFile);
     $ekstensiGambar = strtolower(end($ekstensiGambar));
 
+    // Memeriksa apakah ekstensi gambar valid
     if (!in_array($ekstensiGambar, $ekstensiGambarValid)) {
         echo "<script>
         alert('Bukan gambar');
@@ -26,6 +31,7 @@ function uploud()
         return false;
     }
 
+    // Memeriksa ukuran file
     if ($ukuranFile > 150000000) {
         echo "<script>
         alert('Ukuran gambar terlalu besar');
@@ -33,9 +39,12 @@ function uploud()
         return false;
     }
 
+    // Menentukan lokasi tujuan penyimpanan gambar
     $tujuan = '../view/img/' . $namaFile;
+
+    // Memindahkan file yang diupload ke lokasi tujuan
     if (move_uploaded_file($tempName, $tujuan)) {
-        return $namaFile;
+        return $namaFile; // Mengembalikan nama file yang diupload
     } else {
         echo "<script>
         alert('Gagal mengupload gambar');
